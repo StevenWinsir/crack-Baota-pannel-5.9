@@ -7,9 +7,13 @@ crack Baota pannel 5.9
 
 修改成为：
 data = {
+
   'status' : True,
+  
   'msg' : {'endtime' : 32503651199 }
+  
   };
+  
 
 3. 进入 “/www/server/panel/data” 新建一个文件 文件名为：“userInfo.json” 内容空 。
 
