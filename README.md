@@ -3,15 +3,13 @@ crack Baota pannel 5.9
 步骤：
 1. wget -O https://raw.githubusercontent.com/StevenWinsir/crack-Baota-pannel-5.9/master/update.sh  https://raw.githubusercontent.com/StevenWinsir/crack-Baota-pannel-5.9/master/update_pro.sh && bash update.sh pro
 
-2. 进入路径：“ /www/server/panel/class” 修改其中的 common.py 文件找到“data = panelAuth.panelAuth().get_order_status(None); ”应该是在164行
+2. 进入路径：“ /www/server/panel/class” 修改其中的 common.py 文件找到“data = panelAuth.panelAuth().get_order_status(None); ” 164行
 
 修改成为：
-#data = panelAuth.panelAuth().get_order_status(None);
 data = {
   'status' : True,
   'msg' : {'endtime' : 32503651199 }
   };
- try:
 
 3. 进入 “/www/server/panel/data” 新建一个文件 文件名为：“userInfo.json” 内容空 。
 
